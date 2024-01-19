@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-draggable-elements',
@@ -8,7 +8,7 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 })
 export class DraggableElementsComponent {
   onDrop(event: CdkDragDrop<any[]>) {
-    console.log('Touched')
     moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
   }
+
 }

@@ -1,10 +1,36 @@
+
 .draggable-box {
-    width: 200px;
-    height: 200px;
-    background-color: #3498db;
+    width: 100px;
+    height: 100px;
     color: #fff;
-    text-align: center;
-    line-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: move;
   }
+
+  .color-1{
+    background-color: teal;
+  }
+
+  .color-2{
+    background-color: peru;
+  }
   
+  .box{
+    padding: 5px;
+    width: 300px;
+    /* height: 250px; */
+    border: double;
+  }
+  .answer-box{
+    width: 295px;
+    height: 125px;
+    border: dotted;
+  }
+
+  .inner-box{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+  }

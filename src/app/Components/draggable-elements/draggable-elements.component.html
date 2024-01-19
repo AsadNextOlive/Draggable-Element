@@ -1,6 +1,11 @@
-<div class="draggable-box" cdkDrag>
-    <p>Drag me!</p>
-</div>
-<div class="draggable-box" cdkDrag>
-    <p>Drag me too!</p>
+<div class="box" >
+    <div class="answer-box" cdkDropList></div>
+    <div class="inner-box">
+        <div class="draggable-box color-1" cdkDrag cdkDragBoundary=".box" >
+            <p>Drag me!</p>
+        </div>
+        <div class="draggable-box color-2" cdkDrag cdkDragBoundary=".box" >
+            <p>Drag me too!</p>
+        </div>
+    </div>
 </div>
